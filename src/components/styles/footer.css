@@ -1,0 +1,46 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    background-color: #333; /* Light grey background */
+    padding: 20px; /* Some padding around the footer */
+    text-align: center; /* Center-align all text */
+}
+
+.footer h1 {
+    font-size: 24px; /* Size of the main header */
+    color: #fff; /* Dark text color */
+    margin-bottom: 20px; /* Space below the header */
+    display: flex; /* Apply flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.links {
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    margin: 10px 0; /* Space above and below each div */
+    display: flex; /* Apply flexbox to each div */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    
+}
+
+.footer img {
+    vertical-align: middle; /* Align images with text */
+    margin-right: 10px; /* Space between image and text */
+    width: 24px; /* Icon size width */
+    height: 24px; /* Icon size height */
+}
+
+.footer a {
+    padding-right: 1rem;
+    color: #fff; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 10px; /* Size of the text */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

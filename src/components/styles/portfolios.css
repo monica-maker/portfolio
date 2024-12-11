@@ -1,0 +1,74 @@
+/* portfolios.css */
+.service {
+    text-align: center;
+    padding: 20px;
+}
+
+.service h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.service p.a {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.detail_cards {
+    display: flex;
+    flex-wrap: wrap; /* Enable flex-wrap */
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: solid;
+    width: 250px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure even spacing for all text elements */
+    align-items: center;
+}
+
+
+.card img{
+    width: 48px; /* Set the width to the same size as icons */
+    height: 48px; /* Set the height to the same size as icons */
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.8rem;
+    color: #666;
+    flex-grow: 1; /* Ensure the paragraph takes up available space */
+    display: flex;
+    align-items: center; /* Center text vertically */
+}
+
+.b1 {
+    background-color: #f8e811;
+    color: #000;
+    border: none;
+    padding: .5rem 2rem;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.b1:hover {
+    background-color: #fefe03;
+}

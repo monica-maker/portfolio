@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.header {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: #000;
+    margin-right: 2rem;
+}
+
+.menu {
+    gap: 25rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    /* background-color: antiquewhite; */
+    margin-right: 4rem;
+}
+
+.menu ul li a {
+    /* background-color: #f1c40f; */
+    color: #000;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+    background-color: #ffcc00;
+}
+
+.chat_button button {
+    background-color: #fae504;
+    color: #000;
+    border-radius: 2rem;
+    border: none;
+    padding: .3rem 2rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat_button button:hover {
+    background-color: #fceb04;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .icon {
+    cursor: pointer;
+    width: 2.5rem;
+    height: auto;
+    font-size: 24px;
+    position: absolute;
+    color: #000;
+}
+
+@media (min-width: 300px) and (max-width: 1000px){
+    
+    .menu {
+        gap: 0;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 50px;
+        left: 160px;
+        z-index: 1000;
+    }
+    
+    .menu.show {
+        display: flex;
+        width: 12rem;
+        position: absolute;
+        top:45px;
+        left: 65%;
+        border-radius: 10px;
+        background-color: #706d69d8;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu ul li {
+        margin: 10px 0;
+    }
+    .menu ul li a {
+        color: #fff;
+    }
+    .hamburger {
+        position: absolute;
+        top: .5%;
+        left: 90%;
+        display: flex;
+    }
+
+    .chat_button {
+        display: none;
+    }
+    .chat_button button{
+        background-color: #706d6900;
+        color: #fff;
+    }
+    .chat_button button:hover {
+        background-color: #3333336a;
+    }
+    .chat_button.show {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
